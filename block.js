@@ -9,11 +9,13 @@ class Block {
 
   toString() {
     return `
-          Block =
-          timestamp = ${this.timestamp}
-          lastHash = ${this.lastHash}
-          data = ${this.data}
+          Block:
+           - timestamp = ${this.timestamp}
+           - lastHash = ${this.lastHash.substring(0, 10)}
+           - hash = ${this.hash.substring(0, 10)}
+           - data = ${this.data}
         `;
   }
-
 }
+
+module.exports = Block;
