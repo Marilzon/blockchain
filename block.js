@@ -20,6 +20,14 @@ class Block {
   static genesis() {
     return new this('Genesis time', '----------', 'HB20', []);
   }
+
+  static mineBlock(lastBlock, data) {
+    const timestamp = Date.Now();
+    const lastHash = lastBlock.hash;
+    const hash = 'hash-pending';
+
+    return new this(timestam, lastHash, data);
+  }
 }
 
 module.exports = Block;
