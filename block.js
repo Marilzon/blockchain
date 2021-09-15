@@ -26,7 +26,7 @@ class Block {
     const lastHash = lastBlock.hash;
     const hash = 'hash-pending';
 
-    return new this(timestam, lastHash, data);
+    return new this(timestamp, lastHash, hash, data);
   }
 }
 
