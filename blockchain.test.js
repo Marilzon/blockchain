@@ -23,7 +23,8 @@ describe('Blockchain', () => {
 
   it('Validates a valid chain', () => {
     bc2.addBlock('500 USD');
-
     expect(bc.isValidChain(bc2.chain)).toBe(true);
+
+
   });
 });
